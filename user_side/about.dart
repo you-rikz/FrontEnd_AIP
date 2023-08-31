@@ -18,6 +18,14 @@ class Welcome extends StatelessWidget {
             ),
           ],
         ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () {
+              // Implement your search functionality here
+            },
+          ),
+        ],
       ),
       drawer: const SafeArea(
         child: Drawer(

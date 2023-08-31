@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:front_end_apt_iba_pa/pages/appointment.dart';
+import 'package:front_end_apt_iba_pa/pages/bottomnavbar.dart';
 import 'package:front_end_apt_iba_pa/pages/fav_page.dart';
 import 'package:front_end_apt_iba_pa/pages/login_page.dart';
 import 'package:front_end_apt_iba_pa/pages/manage.dart';
@@ -13,8 +14,7 @@ import 'package:front_end_apt_iba_pa/pages/view_prop.dart';
 import 'package:front_end_apt_iba_pa/pages/welcome_screen.dart';
 import 'package:front_end_apt_iba_pa/user_side/about.dart';
 import 'package:front_end_apt_iba_pa/user_side/home_page.dart';
-
-
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,18 +23,15 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      home: BottomNav(),
       debugShowCheckedModeBanner: false,
-      
       theme: ThemeData(
-       
         primarySwatch: Colors.blue,
         useMaterial3: true,
       ),
-      home: HomePage(),
     );
   }
 }

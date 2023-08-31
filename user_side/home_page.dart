@@ -16,11 +16,12 @@ class HomePage extends StatelessWidget {
           children: [
             Center(
               child: Transform.translate(
-                  offset: const Offset(-20, 0),
-                  child: Image.asset(
-                    'images/single_logo.png',
-                  )),
-            )
+                offset: const Offset(-20, 0),
+                child: Image.asset(
+                  'images/single_logo.png',
+                ),
+              ),
+            ),
           ],
         ),
       ),
@@ -1359,7 +1360,7 @@ class HomePage extends StatelessWidget {
                 const SizedBox(width: 20), // Add spacing between containers
                 _buildElevatedContainer(
                   text: 'Customer Support',
-                  imagePath: 'images/handshake.png', 
+                  imagePath: 'images/handshake.png',
                   desc:
                       "You can ask for help from the \nteam, anytime. Just send us a \nmessage and we’ll get back \nto you immediately.",
                 ),
@@ -1374,13 +1375,13 @@ class HomePage extends StatelessWidget {
               children: [
                 _buildElevatedContainer(
                     text: 'A space to call home',
-                    imagePath:'images/home.png',
+                    imagePath: 'images/home.png',
                     desc:
                         "We make sure our rooms are \nnot just a space for you but a \nplace you can call home, \nsomewhere you can work \nand relax at the same time."),
                 const SizedBox(width: 20), // Add spacing between containers
                 _buildElevatedContainer(
                     text: 'Built-in Comfort',
-                    imagePath:'images/smiley.png',
+                    imagePath: 'images/smiley.png',
                     desc:
                         "Our homes are functional \nspaces with built-in amenities \nthat cater to your basic needs \nand create the comfort that \nyou desire."),
               ],
@@ -1394,13 +1395,13 @@ class HomePage extends StatelessWidget {
               children: [
                 _buildElevatedContainer(
                     text: 'Well-secured Spaces',
-                    imagePath:'images/orientation.png',
+                    imagePath: 'images/orientation.png',
                     desc:
                         "Our homes come with CCTV, \ncaretakers, and security \npersonnel you can rely on for \nyour safety."),
                 const SizedBox(width: 20), // Add spacing between containers
                 _buildElevatedContainer(
                     text: 'Regular Maintenance',
-                    imagePath:'images/wrench.png',
+                    imagePath: 'images/wrench.png',
                     desc:
                         "Choose from different spaces, \nreserve, and schedule your \nsecond home with one click \nof a button"),
               ],
